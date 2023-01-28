@@ -5,4 +5,4 @@ Duy Nam Bui and Ngan Duong Thi Thuy and Manh Duong Phung, 'Ant Colony Optimizati
 Planning with Multiple Unmanned Aerial Vehicles', *International joint conference on neural networks (IJCNN 2023)*.
 
 ![ipp](ipp2.png)
-![cost](cost.png)
+![cost](cost2.png)
