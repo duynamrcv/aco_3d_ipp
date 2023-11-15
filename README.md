@@ -18,5 +18,7 @@ Planning with Multiple Unmanned Aerial Vehicles," The 2024 16th IEEE/SICE Intern
 ```
 
 ### Results
-![ipp](ipp2.png)
-![cost](cost2.png)
+<p float="left">
+  <img src="ipp2.png" width="400" />
+  <img src="cost2.png" width="490" />
+</p>
