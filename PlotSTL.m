@@ -22,16 +22,17 @@ function PlotSTL(model)
     figure(1);
     grid on;
 
-    % scatter3(model(:,1), model(:,2), model(:,3),300,model(:,3), '.');
-    % plot3(model(:,1), model(:,2), model(:,3), '-');
+    scatter3(model(:,1), model(:,2), model(:,3),300,model(:,3), '.');
+    plot3(model(:,1), model(:,2), model(:,3), '-');
 
-    gm = fegeometry('model1.stl');
-    % scale(gm.Vertices,3);
-    gm = gm.scale(3);
-    gm = gm.rotate(90,[0 0 0],[1 0 0]); % rotate 90 about x-axis
-    gm = gm.rotate(180,[0 0 0],[0 0 1]); % rotate 90 about x-axis
-    gm = gm.translate([75 75 70]);
-    pdegplot(gm);    
+    % This part of is for display .stl file better
+    % gm = fegeometry('model1.stl');
+    % % scale(gm.Vertices,3);
+    % gm = gm.scale(3);
+    % gm = gm.rotate(90,[0 0 0],[1 0 0]); % rotate 90 about x-axis
+    % gm = gm.rotate(180,[0 0 0],[0 0 1]); % rotate 90 about x-axis
+    % gm = gm.translate([75 75 70]);
+    % pdegplot(gm);    
 
     colormap sky;
     view([120,20]);

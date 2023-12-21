@@ -48,8 +48,8 @@ ant=repmat(empty_ant,nAnt,1);
 BestSol.Cost=inf;
 
 % Read the 3D data
-% stl = ReadSTLModel1();
-stl = 'model1.stl';
+stl = ReadSTLModel1();
+% stl = 'model1.stl';
 writeObjPath = VideoWriter('PathVideo.avi');
 open(writeObjPath);
 % figCost = figure(2);
@@ -117,7 +117,7 @@ for it=1:MaxIt
     disp(['Iteration ' num2str(it) ': Best Cost = ' num2str(BestCost(it))]);
     
     figPath = figure(1);
-    % PlotSTL(stl);
+
     PlotSTL(stl);
 
     hold on;
