@@ -10,7 +10,7 @@ function PlotSolution(tour,model)
         'MarkerFaceColor',[0 .75 .75]);
     
     axis equal;
-    grid on;
+    % grid on;
     
 	alpha = 0.1;
 	

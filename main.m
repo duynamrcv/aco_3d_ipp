@@ -8,14 +8,14 @@ P = load('Point.mat');
 
 model=CreateModel(P.X);
 
-CostFunction=@(tour) TourCourse(tour,model);
+CostFunction=@(tour) TourCost(tour,model);
 
 nVar=model.n;
 
 
 %% ACO Parameters
 
-MaxIt=100;      % Maximum Number of Iterations
+MaxIt=350;      % Maximum Number of Iterations
 
 nAnt=50;       % Number of Ants (Population Size)
 
@@ -47,6 +47,14 @@ ant=repmat(empty_ant,nAnt,1);
 % Best Ant
 BestSol.Cost=inf;
 
+% Read the 3D data
+% stl = ReadSTLModel1();
+stl = 'model1.stl';
+writeObjPath = VideoWriter('PathVideo.avi');
+open(writeObjPath);
+% figCost = figure(2);
+writeObjCost = VideoWriter('CostVideo.avi');
+open(writeObjCost);
 
 %% ACO Main Loop
 
@@ -107,17 +115,40 @@ for it=1:MaxIt
     
     % Show Iteration Information
     disp(['Iteration ' num2str(it) ': Best Cost = ' num2str(BestCost(it))]);
+    
+    figPath = figure(1);
+    % PlotSTL(stl);
+    PlotSTL(stl);
+
+    hold on;
+    PlotSolution(BestSol.Tour,model);
+    f1 = getframe(figPath);
+    % imshow(f1.cdata);
+    writeVideo(writeObjPath,f1)
+    hold off;
+
+    fig2 = figure(2);
+    plot(BestCost,'LineWidth',2);
+    xlabel('Iteration');
+    ylabel('Best Cost');
+    grid on;
+    f2 = getframe(fig2);
+    writeVideo(writeObjCost,f2);
 end
+close(writeObjPath);
+close(writeObjCost);
 
 %% Results
+% PlotSTL(stl);
+% PlotSolution(BestSol.Tour,model);
+% % f1 = getframe(figPath);s
+% % writeVideo(writeObjPath,f1)
+% hold off;
 
-stl = ReadSTLModel1();
-PlotSTL(stl);
-PlotSolution(BestSol.Tour,model);
-hold off;
-
-figure;
-plot(BestCost,'LineWidth',2);
-xlabel('Iteration');
-ylabel('Best Cost');
-grid on;
+% figure(2);
+% plot(BestCost,'LineWidth',2);
+% xlabel('Iteration');
+% ylabel('Best Cost');
+% grid on;
+% f2 = getframe(figCost);
+% writeVideoScenes(writeObjCost,f2)

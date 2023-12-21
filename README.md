@@ -18,7 +18,8 @@ Planning with Multiple Unmanned Aerial Vehicles," The 2024 16th IEEE/SICE Intern
 ```
 
 ### Results
+The result of algorithm with 350 iterations.
 <p float="left">
-  <img src="ipp2.png" width="400" />
-  <img src="cost2.png" width="490" />
+  <video src="PathVideo.avi" width="490" />
+  <video src="CostVideo.avi" width="490" />
 </p>
