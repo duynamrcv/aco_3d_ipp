@@ -26,8 +26,7 @@ function PlotSTL(model)
     plot3(model(:,1), model(:,2), model(:,3), '-');
 
     % This part of is for display .stl file better
-    % gm = fegeometry('model1.stl');
-    % % scale(gm.Vertices,3);
+    % gm = fegeometry(model);
     % gm = gm.scale(3);
     % gm = gm.rotate(90,[0 0 0],[1 0 0]); % rotate 90 about x-axis
     % gm = gm.rotate(180,[0 0 0],[0 0 1]); % rotate 90 about x-axis
