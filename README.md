@@ -6,15 +6,16 @@ Planning with Multiple Unmanned Aerial Vehicles," The 2024 16th IEEE/SICE Intern
 
 ### Cite
 ```
-@INPROCEEDINGS{Nam2024,
+@INPROCEEDINGS{10417512,
   author={Bui, Duy Nam and Duong, Thuy Ngan and Phung, Manh Duong},
-  booktitle={The 2024 16th IEEE/SICE International Symposium on System Integration (SII 2024)}, 
+  booktitle={2024 IEEE/SICE International Symposium on System Integration (SII)}, 
   title={Ant Colony Optimization for Cooperative Inspection Path Planning Using Multiple Unmanned Aerial Vehicles}, 
   year={2024},
   volume={},
   number={},
-  pages={},
-  doi={}}
+  pages={675-680},
+  keywords={Solid modeling;Ant colony optimization;Visualization;Three-dimensional displays;Inspection;Autonomous aerial vehicles;Path planning;Coverage path planning;infrastructure monitoring;vision-based inspection;ant colony optimization;unmanned aerial vehicle},
+  doi={10.1109/SII58957.2024.10417512}}
 ```
 
 ### Results
