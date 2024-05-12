@@ -1,4 +1,4 @@
-# Ant Colony Optimization for Cooperative Inspection Path Planning Using Multiple Unmanned Aerial Vehicles
+  # Ant Colony Optimization for Cooperative Inspection Path Planning Using Multiple Unmanned Aerial Vehicles
 Matlab code for 3D inspection path planning
 This repository presents the MATLAB source code of the following article:
 
@@ -21,7 +21,6 @@ Planning with Multiple Unmanned Aerial Vehicles**," *The 2024 16th IEEE/SICE Int
 
 ## Results
 The result of algorithm with 350 iterations.
-<p float="left">
-  <video src="PathVideo.avi" width=490></video>
-  <video src="CostVideo.avi" width=490></video>
-</p>
+| Path | Cost value |
+| :---:        |     :---:      |
+|  <img src="PathVideo.avi" alt="" width="100%" >   | <img src="CostVideo.avi" alt="" width="100%" >    |
