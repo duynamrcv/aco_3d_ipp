@@ -23,4 +23,4 @@ Planning with Multiple Unmanned Aerial Vehicles**," *The 2024 16th IEEE/SICE Int
 The result of algorithm with 350 iterations.
 | Path | Cost value |
 | :---:        |     :---:      |
-|  <img src="PathVideo.gif" alt="" width="100%" >   | <img src="cost2.png" alt="" width="100%" >    |
+|  <img src="PathVideo.gif" alt="" width="100%" >   | <img src="CostVideo.gif" alt="" width="100%" >    |
