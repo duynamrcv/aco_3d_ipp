@@ -3,7 +3,7 @@
 This repository presents the MATLAB source code of the following article:
 
 Duy Nam Bui and Thuy Ngan Duong and Manh Duong Phung, "**Ant Colony Optimization for 3D Inspection Path
-Planning with Multiple Unmanned Aerial Vehicles**," *The 2024 16th IEEE/SICE International Symposium on System Integration (SII 2024)*, Ha Long, Vietnam, 2024, pp. 675-680. [[**IEEE** *Explore*]](https://ieeexplore.ieee.org/document/9549498)[[Citation]](#citation)
+Planning with Multiple Unmanned Aerial Vehicles**," *The 2024 16th IEEE/SICE International Symposium on System Integration (SII 2024)*, Ha Long, Vietnam, 2024, pp. 675-680. [[**IEEE** *Explore*]](https://doi.org/10.1109/SII58957.2024.10417512)[[Citation]](#citation)
 
 ## Citation
 ```
